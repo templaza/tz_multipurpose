@@ -42,7 +42,7 @@
 #main .tz_mulri_pn .sb-navigation-right:hover {
     background: url("../images/hove_pn.png") no-repeat scroll -30px 0 rgba(0, 0, 0, 0);
 }
-#slider .flex-direction-nav .flex-next {
+#slider .flex-direction-nav .flex-next, #carousel .flex-direction-nav .flex-next{
     text-align: left;
 }
 .slides .tz_multi_item, .owl-carousel .tz_multi_item {

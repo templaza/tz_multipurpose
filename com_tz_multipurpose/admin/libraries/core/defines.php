@@ -20,7 +20,7 @@
 // No direct access
 defined('_JEXEC') or die;
 
-define('COM_TZ_MULTIPURPOSE','com_tz_MULTIPURPOSE');
+define('COM_TZ_MULTIPURPOSE','com_tz_multipurpose');
 define ('COM_TZ_MULTIPURPOSE_ADMIN_HOST_PATH', JURI::base(true).'/components/'.COM_TZ_MULTIPURPOSE);
 define ('COM_TZ_MULTIPURPOSE_LIBRARIES', dirname(dirname(dirname(__FILE__.'/libraries'))));
 define ('COM_TZ_MULTIPURPOSE_ADMIN_PATH', dirname(dirname(dirname(__FILE__))));

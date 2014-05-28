@@ -26,7 +26,6 @@ $link_img    = $params->get('link_img_flex', '');
 
 ?>
 <div class="TzMultipurpose">
-    <h3 class="tz_multi_title"><?php echo $module -> title;?></h3>
     <div id="slider" class="flexslider">
         <ul class="slides">
             <?php

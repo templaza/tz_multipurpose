@@ -85,7 +85,6 @@ endif;
 
 ?>
 <div class="TzMultipurpose">
-    <h3 class="tz_multi_title"><?php echo $module -> title;?></h3>
     <div id="TzMultipurpose<?php echo $module -> id;?>" class="owl-carousel owl-theme<?php echo $moduleclass_sfx; ?>">
         <?php
         foreach($list as $key => $arr) {?><div class="tz_multi_item"><?php

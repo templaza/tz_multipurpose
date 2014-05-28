@@ -15,7 +15,6 @@ $document->addStyleSheet('modules/mod_tz_multipurpose/css/style.css');
 ?>
 
 <div class="TzMultipurpose <?php echo $moduleclass_sfx; ?>">
-    <h3 class="tz_multi_title"><?php echo $module -> title;?></h3>
     <?php
     foreach($list as $key => $arr) {?><div class="tz_multi_item"><?php
         $id_group       = $arr -> group;

@@ -30,7 +30,7 @@ class TZ_MultipurposeController extends JControllerLegacy {
 
         // If the joomla's version is more than or equal to 3.0
         $doc    = JFactory::getDocument();
-        $doc -> addStyleSheet(COM_TZ_MULTIPURPOSE_ADMIN_HOST_PATH.'/jui/css/styles.css');
+        $doc -> addStyleSheet('components/com_tz_multipurpose/jui/css/styles.css');
         if(!COM_TZ_MULTIPURPOSE_JVERSION_COMPARE){
 
             JHtml::addIncludePath(JPATH_ADMINISTRATOR.'/components/com_tz_multipurpose/libraries/cms/html');
