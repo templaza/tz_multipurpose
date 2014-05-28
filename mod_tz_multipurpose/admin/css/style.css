@@ -1,0 +1,155 @@
+select {
+    min-width: 150px;
+}
+.tz_form_multi {
+    clear: both;
+    padding-top: 20px;
+}
+#tz-form-multipurpose .control-group {
+    clear: both;
+    padding: 10px 0;
+}
+.control-group {
+    clear: both;
+}
+.control-group #tz_select_group_chzn {
+    display: none;
+}
+#button_save, #button_cancel {
+    opacity: 0;
+}
+.btn_add, .edit, .delete {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #F5F5F5;
+    background-image: linear-gradient(to bottom, #FFF, #E6E6E6);
+    background-repeat: repeat-x;
+    border-color: #BBB #BBB #A2A2A2;
+    border-image: none;
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: none;
+    color: #333333;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 13px;
+    line-height: 18px;
+    margin-bottom: 0;
+    padding: 4px 14px;
+    text-align: center;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+    vertical-align: middle;
+}
+#tz-form-multipurpose label {
+    clear: left;
+    float: left;
+    margin: 5px 0;
+    max-width: 250px;
+    min-width: 180px;
+    padding: 0 5px 0 0;
+}
+.tz_multi_field {
+    float: left;
+    margin: 5px 5px 5px 0 !important;
+    width: auto;
+}
+a.btn_add {
+    background: url("add.png") no-repeat scroll 9px 9px rgba(0, 0, 0, 0);
+    display: block;
+    padding: 8px 15px 9px 30px;
+    margin-top: 20px;
+    width: 55px;
+}
+a.btn_add:hover {
+    text-decoration: none;
+}
+/*#tz_select_group, #select-lbl, .control-group.save, .control-group.fields {*/
+    /*display: none;*/
+/*}*/
+#tz_select_group, #select-lbl {
+    display: none;
+}
+#tz-table-multi {
+    display: block;
+    clear: both;
+}
+.tz_multipurpose_item {
+    padding: 10px 0;
+}
+.tz_item_child {
+    background: #F4F4F4;
+    border-bottom: 1px solid #CCC;
+}
+.tz_item_child > div {
+    display: inline-block;
+    padding: 8px;
+}
+.tz_field_name {
+    width: 80px;
+    color: #025A8D;
+    border-right: 1px solid #CCC;
+}
+.tz_multipurpose_item {
+    position: relative;
+    padding-top: 30px;
+}
+.tz_field_name:hover {
+    cursor: pointer;
+}
+.edit, .delete, .move {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    text-indent: -9999em;
+    border: none;
+}
+.tz_multipurpose_item .edit {
+    background: url("edit1.png") no-repeat;
+    right: 30px;
+}
+.tz_multipurpose_item .delete {
+    background: url("delete1.png") no-repeat;
+}
+.tz_multipurpose_item .move {
+    background: url("move.png") no-repeat;
+    height: 40px;
+    right: 59px;
+    width: 30px;
+    cursor: pointer;
+}
+#button_save {
+    background: url("save1.png") no-repeat;
+}
+#button_cancel {
+    background: url("cancel1.png") no-repeat;
+}
+#button_cancel, #button_save {
+    border: medium none;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    color: #000000;
+    height: 20px;
+    margin-top: 20px;
+    padding-left: 25px;
+    padding-right: 30px;
+    text-shadow: none;
+    line-height: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    float: left;
+}
+.button2-left {
+    float: left;
+    margin: 5px 5px 5px 0;
+}
+#tz-form-multipurpose .radio, #tz-form-multipurpose .checkbox {
+    padding: 0;
+}
+select {
+    min-width: 176px;
+}
