@@ -1,12 +1,23 @@
 <?php
-/**
- * Created by JetBrains PhpStorm.
- * User: SunlandNo1
- * Date: 4/19/12
- * Time: 10:02 AM
- * To change this template use File | Settings | File Templates.
- */
- 
+/*------------------------------------------------------------------------
+
+# TZ Portfolio Extension
+
+# ------------------------------------------------------------------------
+
+# author    DuongTVTemPlaza
+
+# copyright Copyright (C) 2012 templaza.com. All Rights Reserved.
+
+# @license - http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+
+# Websites: http://www.templaza.com
+
+# Technical Support:  Forum - http://templaza.com/Forum
+
+-------------------------------------------------------------------------*/
+defined('_JEXEC') or die();
+
 function mime_content_type($filename) {
 
         $mime_types = array(

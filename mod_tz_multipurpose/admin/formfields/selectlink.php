@@ -1,10 +1,21 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Thuong
- * Date: 5/7/14
- * Time: 11:31 AM
- */
+/*------------------------------------------------------------------------
+
+# TZ Portfolio Extension
+
+# ------------------------------------------------------------------------
+
+# author    DuongTVTemPlaza
+
+# copyright Copyright (C) 2012 templaza.com. All Rights Reserved.
+
+# @license - http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+
+# Websites: http://www.templaza.com
+
+# Technical Support:  Forum - http://templaza.com/Forum
+
+-------------------------------------------------------------------------*/
 
 defined('JPATH_BASE') or die;
 
@@ -55,7 +66,6 @@ class JFormFieldSelectlink extends JFormField {
             $doc->addScript(JUri::root(true) . '/modules/mod_tz_multipurpose/admin/js/jquery-1.9.1.min.js');
             $doc->addScript(JUri::root(true) . '/modules/mod_tz_multipurpose/admin/js/jquery-noconflict.js');
         }
-        $doc->addScript(JUri::root(true) . '/modules/mod_tz_multipurpose/admin/js/base64.js');
         $doc->addScript(JUri::root(true) . '/modules/mod_tz_multipurpose/admin/js/jquery-ui-min.js');
         $doc->addScript(JUri::root(true) . '/modules/mod_tz_multipurpose/admin/js/tzmultipurpose.js');
         $doc->addStyleSheet(JUri::root(true) . '/modules/mod_tz_multipurpose/admin/css/style.css');
