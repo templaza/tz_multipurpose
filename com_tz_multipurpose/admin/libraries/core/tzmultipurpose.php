@@ -16,6 +16,8 @@
 # Technical Support:  Forum - http://templaza.com/Forum
 
 -------------------------------------------------------------------------*/
+defined('_JEXEC') or die();
+
 function tzMULTIPURPOSEimport($package)
 {
     $path = COM_TZ_MULTIPURPOSE_ADMIN_PATH . DIRECTORY_SEPARATOR . 'libraries' . DIRECTORY_SEPARATOR

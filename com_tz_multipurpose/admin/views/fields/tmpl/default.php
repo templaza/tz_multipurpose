@@ -210,7 +210,7 @@ $sortFields = array('f.ordering' => JText::_('JGRID_HEADING_ORDERING'),
             <input type="hidden" value="0" name="boxchecked">
             <input type="hidden" value="<?php echo $this -> state -> filter_order;?>" name="filter_order">
             <input type="hidden" value="<?php echo $this -> state -> filter_order_Dir;?>" name="filter_order_Dir">
-            <input type="hidden" name="return" value="<?php echo base64_encode(JUri::getInstance() -> toString())?>">
+            <input type="hidden" name="return" value="0">
             <?php echo JHTML::_('form.token');?>
         </div>
 </form>
