@@ -211,23 +211,6 @@
                 </field>
             </fieldset>
 
-            <fieldset name="tz_multi_isotope" label="MOD_TZ_MULTIPURPOSE_ISOTOPE" addfieldpath="/modules/mod_tz_multipurpose/admin/formfields">
-                <field name="showLinkImg_iso" type="radio"
-                       class="btn-group" default="0"
-                       label="MOD_TZ_MULTIPURPOSE_SHOW_LINK_IMG_LABEL"
-                       description="MOD_TZ_MULTIPURPOSE_SHOW_LINK_IMG_DESC">
-                    <option value="0">JNO</option>
-                    <option value="1">JYES</option>
-                </field>
-                <field type="selectfilegroup" name="select_filter_is" label="MOD_TZ_MULTIPURPOSE_SELECT_FILTER_ISOTOPE">
-
-                </field>
-                <field name="show_n_item" type="text"
-                       label="MOD_TZ_MULTIPURPOSE_ISOTOPE_SHOW_ITEM_LABL"
-                       description="MOD_TZ_MULTIPURPOSE_ISOTOPE">
-                </field>
-            </fieldset>
-
             <fieldset name="tz_multi_ourteam" label="MOD_TZ_MULTIPURPOSE_SELECT_OUR_TEAM">
                 <field name="add_css_rps_ut" type="radio"
                        class="btn-group" default="0"
