@@ -12,14 +12,14 @@
 	<version>1.1</version>
     <files>
         <filename module="mod_tz_multipurpose">mod_tz_multipurpose.php</filename>
-        <filename>helper.php</filename>
-        <filename>index.html</filename>
-        <folder>admin</folder>
+		<folder>admin</folder>
 		<folder>images</folder>
 		<folder>fonts</folder>
 		<folder>js</folder>
         <folder>css</folder>
         <folder>tmpl</folder>
+        <filename>helper.php</filename>
+        <filename>index.html</filename>
     </files>
     <languages folder="languages">
         <language tag="en-GB">en-GB/en-GB.mod_tz_multipurpose.ini</language>
