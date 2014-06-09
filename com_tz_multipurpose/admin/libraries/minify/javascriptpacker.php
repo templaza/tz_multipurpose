@@ -65,7 +65,6 @@
  *   UTF-8 in your files... 
  */
 
-defined('_JEXEC') or die();
 
 class JavaScriptPacker {
 	// constants

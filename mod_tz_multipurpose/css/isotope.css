@@ -1,0 +1,41 @@
+.button-group .btn {
+    background-image: none;
+    background-color: #FFF;
+    text-transform: uppercase;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    margin-right: 10px;
+    padding: 10px 15px;
+}
+.button-group .btn.is-checked {
+    background-color: #333;
+    color: #FFF;
+    text-shadow: none;
+    border-color: #333;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+.button-group .btn:focus {
+    outline: 0 none;
+    outline-offset: 0;
+}
+.button-group .btn:hover, .button-group .btn:active {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+.purpose_pagenav {
+    margin: 10px 0;
+}
+.purpose_pagenav a {
+    background: none repeat scroll 0 0 #333;
+    border: 1px solid #FFF;
+    color: #fff;
+    padding: 6px 10px;
+}
+.purpose_pagenav a:hover, .purpose_pagenav a.is_checked {
+    background: #000;
+    text-decoration: none;
+}

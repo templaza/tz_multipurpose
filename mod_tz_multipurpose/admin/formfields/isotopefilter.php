@@ -1,0 +1,105 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Thuong
+ * Date: 5/7/14
+ * Time: 11:31 AM
+ */
+
+defined('JPATH_BASE') or die;
+
+jimport('joomla.form.formfield');
+jimport('joomla.html.editor');
+
+JHtml::_('behavior.formvalidation');
+JHtml::_('behavior.tooltip');
+JHtml::_('formbehavior.chosen', 'select');
+JHtml::_('behavior.framework');
+JHtml::_('behavior.modal', 'a.modal');
+JHtml::_('bootstrap.tooltip');
+
+class JFormFieldIsotopefilter extends JFormField {
+
+    protected $type = 'Isotopefilter';
+
+    // getLabel() left out
+
+    public static function getList(&$params){
+        $multi   = $params -> get('multipurpose');
+        foreach($multi as $key => $arr) {
+            foreach($arr as $n => $value){
+                if($n != 'group'){
+                    if(is_numeric($n)) {
+                        $field = self::getField($n);
+//                            $multi -> type  = $field -> type;
+                    }
+                }
+            }
+        }
+        return $multi;
+    }
+
+    public function getField($field) {
+        $db		= JFactory::getDbo();
+        $query	= $db->getQuery(true);
+        $query -> select('*');
+        $query -> from('#__tz_multipurpose_fields');
+        $query -> where('id = '.$field);
+        $db -> setQuery($query);
+        $items = $db -> loadObjectList();
+
+        return $items;
+    }
+    public function selected($id_f) {
+        $selected = '';
+        $value = $this -> value;
+        if(isset($value)) {
+            $arr_value = explode(',',$value);
+            foreach ($arr_value as $fid => $value_fid) {
+                if($id_f == $value_fid) {
+                    $selected = 'selected="selected"';
+                }
+            }
+        }
+        return$selected;
+    }
+
+    public function getInput() {
+//        $multi   = $params -> get('multipurpose');
+        $doc = JFactory::getDocument();
+        if (!version_compare(JVERSION,'3.0','ge')) {
+            $doc->addScript(JUri::root(true) . '/modules/mod_tz_multipurpose/admin/js/jquery-1.9.1.min.js');
+            $doc->addScript(JUri::root(true) . '/modules/mod_tz_multipurpose/admin/js/jquery-noconflict.js');
+        }
+        $doc->addScript(JUri::root(true) . '/modules/mod_tz_multipurpose/admin/js/base64.js');
+        $doc->addScript(JUri::root(true) . '/modules/mod_tz_multipurpose/admin/js/jquery-ui-min.js');
+        $doc->addScript(JUri::root(true) . '/modules/mod_tz_multipurpose/admin/js/tzmultipurpose.js');
+        $doc->addStyleSheet(JUri::root(true) . '/modules/mod_tz_multipurpose/admin/css/style.css');
+        $db = JFactory::getDbo();
+        $query  = $db -> getQuery(true);
+        $query -> select('g.name, f.id, f.title');
+        $query -> from('#__tz_multipurpose_fields AS f');
+        $query -> join('INNER','#__tz_multipurpose_groupfield AS gf ON f.id=gf.fieldsid');
+        $query -> join('INNER','#__tz_multipurpose_groups AS g ON g.id=gf.groupid');
+        $query -> where('f.type IN ("select","radio","multipleSelect","checkbox")');
+        $db->setQuery($query);
+        $items = $db -> loadObjectList();
+        $html  = '';
+        $name = (string)($this -> element['name']);
+        $html .= '<select multiple="" name="jform[params][selec_fid_is]" id="jform_params'.$name.'" style="display: none;" class="chzn-done">';
+        $html .= '<optgroup label="---Group Field---" id="jform_params_select_fid_is__">';
+
+        foreach($items as $key => $value_gf){
+            $id_f   = $value_gf -> id;
+            $name_g = $value_gf -> name;
+            $name_f = $value_gf -> title;
+            $select =   $this -> selected($id_f);
+            $html .= '<option '.$select.' value="'.$id_f.'">'.$name_g.'_'.$name_f.'</option>';
+        }
+
+        $html .= '</optgroup>
+                </select>';
+        $html .= '<input type="hidden" value="" id="'.$name.'_hidden" name="'.$this->name.'"/>';
+        return $html;
+    }
+}

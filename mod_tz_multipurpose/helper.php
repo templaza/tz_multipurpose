@@ -1,21 +1,10 @@
 <?php
-/*------------------------------------------------------------------------
-
-# TZ Portfolio Extension
-
-# ------------------------------------------------------------------------
-
-# author    DuongTVTemPlaza
-
-# copyright Copyright (C) 2012 templaza.com. All Rights Reserved.
-
-# @license - http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
-
-# Websites: http://www.templaza.com
-
-# Technical Support:  Forum - http://templaza.com/Forum
-
--------------------------------------------------------------------------*/
+/**
+ * Created by PhpStorm.
+ * User: Thuong
+ * Date: 5/7/14
+ * Time: 10:40 AM
+ */
 
 defined('_JEXEC') or die();
 
@@ -114,11 +103,52 @@ class modTZMultipurposeHelper{
         if($link_open == 'Same Window') {
             $link_o = 'target="_blank"';
         }
+        $field_a = self::getField($a);
+        $value      = $field_a -> value;
+        $value      = json_decode($value);
+        $value      = $value[0];
+        $value_img  = $value->image;
         $link_option    = new stdClass();
         $link_option      -> link         = $link;
         $link_option      -> link_o       = $link_o;
         $link_option      -> title_link   = $title_link;
+        $link_option      -> img          = $value_img;
 
         return $link_option;
     }
+
+    // isotope
+    // function get value field isotope
+    public static function getValueFIS ($arr,$arr_filter) {
+        $value_fis = '';
+        foreach($arr_filter as $key => $value) {
+            
+        }
+    }
+
+    // function get value in params follow fields
+    public static function getValueFields($arr,$get_field_id) {
+        $value = $arr->$get_field_id;
+        return $value;
+    }
+
+    // function get value in params follow list fields
+    public static function getValueFieldsIsotope($arr,$arr_filter) {
+        $count_arrf  = count($arr_filter);
+        $value_filter = array();
+        if($count_arrf > 1) {
+            foreach($arr_filter as $key => $value) {
+                $value_filter[]  =   $arr -> $value;
+            }
+        }else {
+            $value_filter[]  =   $arr -> $value;
+        }
+        $value_filter   = implode(',',$value_filter);
+        $value_filter   = str_replace(',',' ',$value_filter);
+
+        return $value_filter;
+    }
+
+    // isotope
+    // get value
 }

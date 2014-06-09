@@ -1,22 +1,4 @@
 <?php
-/*------------------------------------------------------------------------
-
-# TZ Portfolio Extension
-
-# ------------------------------------------------------------------------
-
-# author    DuongTVTemPlaza
-
-# copyright Copyright (C) 2012 templaza.com. All Rights Reserved.
-
-# @license - http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
-
-# Websites: http://www.templaza.com
-
-# Technical Support:  Forum - http://templaza.com/Forum
-
--------------------------------------------------------------------------*/
-
 // Smart Image Resizer 1.4.1
 // Resizes images, intelligently sharpens, crops based on width:height ratios, color fills
 // transparent GIFs and PNGs, and caches variations for optimal performance
@@ -33,8 +15,8 @@
 // to send me an email. Smart Image Resizer is released under a Creative Commons
 // Attribution-Share Alike 3.0 United States license
 // (http://creativecommons.org/licenses/by-sa/3.0/us/). All I ask is that you include a link
-// back to Shifting Pixel (either this page or shiftingpixel.com), but donï¿½t worry about
-// including a big link on each page if you donï¿½t want toï¿½one will do just nicely. Feel
+// back to Shifting Pixel (either this page or shiftingpixel.com), but don’t worry about
+// including a big link on each page if you don’t want to–one will do just nicely. Feel
 // free to contact me to discuss any specifics (joe@shiftingpixel.com).
 
 /////////////////////
@@ -72,8 +54,6 @@
 /////////////////////
 // CODE STARTS HERE
 /////////////////////
-
-defined('_JEXEC') or die();
 
 if (!isset($_GET['image']))
 {
@@ -429,5 +409,5 @@ function doConditionalGet($etag, $lastModified)
 // a frog jumps
 // the sound of water
 
-// ï¿½Matsuo Basho
+// —Matsuo Basho
 ?>

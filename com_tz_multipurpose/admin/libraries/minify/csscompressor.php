@@ -1,21 +1,8 @@
 <?php
-/*------------------------------------------------------------------------
-
-# TZ Portfolio Extension
-
-# ------------------------------------------------------------------------
-
-# author    DuongTVTemPlaza
-
-# copyright Copyright (C) 2012 templaza.com. All Rights Reserved.
-
-# @license - http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
-
-# Websites: http://www.templaza.com
-
-# Technical Support:  Forum - http://templaza.com/Forum
-
--------------------------------------------------------------------------*/
+/**
+ * Class Minify_CSS_Compressor 
+ * @package Minify
+ */
 
 /**
  * Compress CSS
@@ -31,9 +18,6 @@
  * @author Stephen Clay <steve@mrclay.org>
  * @author http://code.google.com/u/1stvamp/ (Issue 64 patch)
  */
-
-defined('_JEXEC') or die();
-
 class Minify_CSS_Compressor {
 
     /**

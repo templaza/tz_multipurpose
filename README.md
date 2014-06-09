@@ -13,6 +13,17 @@ Demo: http://demo.tzportfolio.com/
 
 *** Changelog ***
 
+06/09/2014 - 1.1
+
+	Add new layout our team
+	Add new layout our team carousel
+	Add new layout pricing table
+	Add new layout progress bars
+	Add new layout service
+	Add new layout servicecarousel
+
+
+
 05/28/2014 - 1.0
 
 	Init version

@@ -1,0 +1,22 @@
+.tz_multi_item .chart {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+}
+.tz_multi_item .chart-inner {
+    bottom: 0;
+    height: 99%;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    width: 99%;
+    z-index: 1;
+}
+.tz_multi_item .percent {
+    display: inline-block;
+    margin-top: 39%;
+}
+.tz_multi_item .chart canvas {
+    z-index: 2;
+}

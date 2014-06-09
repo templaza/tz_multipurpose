@@ -327,7 +327,7 @@ window.addEvent('load', function() {
                     'name':'jform[option_target][]'
                 });
                 myField.inject(linkDiv);
-<!--                createBox($('fieldvalue'),'jform[option_icon][]',0,'--><?php //echo $fields[0] -> image;?><!--');-->
+                createBox($('fieldvalue'),'jform[option_icon][]',0,'<?php echo $fields[0] -> image;?>');
                 jQuery('select').chosen({
                     disable_search_threshold : 10,
                     allow_single_deselect : true

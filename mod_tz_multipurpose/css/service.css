@@ -1,0 +1,29 @@
+.TzMultipurpose.service {
+    display: block;
+    text-align: center;
+}
+.tz_img i.fa {
+    color: #FF7200;
+    font-size: 80px;
+}
+.tz_multi_title {
+    font-weight: bold;
+    padding-top: 13px;
+    text-transform: uppercase;
+    padding: 25px 0 5px;
+}
+.tz_link.tz_title {
+    color: #333333;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 0;
+}
+.tz_multi_item i {
+    font-size: 80px;
+    color: #FF7200;
+}
+.owl-carousel .tz_multi_item {
+    padding: 0 20px;
+    text-align: center;
+}
