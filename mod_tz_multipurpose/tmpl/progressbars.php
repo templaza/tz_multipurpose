@@ -161,7 +161,7 @@ $document -> addScriptDeclaration('
 		}
     }
 
-    jQuery(window).scroll(function(){
+    jQuery(window).load(function(){
         chartfunc'.$module -> id.'();
     });
 ');
