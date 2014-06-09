@@ -1,21 +1,10 @@
 <?php
-/*------------------------------------------------------------------------
-
-# TZ Portfolio Extension
-
-# ------------------------------------------------------------------------
-
-# author    DuongTVTemPlaza
-
-# copyright Copyright (C) 2012 templaza.com. All Rights Reserved.
-
-# @license - http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
-
-# Websites: http://www.templaza.com
-
-# Technical Support:  Forum - http://templaza.com/Forum
-
--------------------------------------------------------------------------*/
+/**
+ * Created by PhpStorm.
+ * User: Thuong
+ * Date: 5/7/14
+ * Time: 11:31 AM
+ */
 
 defined('JPATH_BASE') or die;
 
@@ -60,11 +49,14 @@ class JFormFieldSelectfilegroup extends JFormField {
     }
 
     public function getInput() {
+
+        $name = (string)($this -> element['name']);
         $doc = JFactory::getDocument();
         if (!version_compare(JVERSION,'3.0','ge')) {
             $doc->addScript(JUri::root(true) . '/modules/mod_tz_multipurpose/admin/js/jquery-1.9.1.min.js');
             $doc->addScript(JUri::root(true) . '/modules/mod_tz_multipurpose/admin/js/jquery-noconflict.js');
         }
+        $doc->addScript(JUri::root(true) . '/modules/mod_tz_multipurpose/admin/js/base64.js');
         $doc->addScript(JUri::root(true) . '/modules/mod_tz_multipurpose/admin/js/jquery-ui-min.js');
         $doc->addScript(JUri::root(true) . '/modules/mod_tz_multipurpose/admin/js/tzmultipurpose.js');
         $doc->addStyleSheet(JUri::root(true) . '/modules/mod_tz_multipurpose/admin/css/style.css');
@@ -77,7 +69,7 @@ class JFormFieldSelectfilegroup extends JFormField {
         $db->setQuery($query);
         $items = $db -> loadObjectList();
         $html  = '';
-        $html .= '<select multiple="" name="jform[params][selectfilegroup]" id="jform_params_selectfilegroup" style="display: none;" class="chzn-done">';
+        $html .= '<select multiple="" name="jform[params]['.$name.']" id="jform_params_'.$name.'" style="display: none;" class="chzn-done">';
         $html .= '<optgroup label="---Group Field---" id="jform_params_selectfilegroup__">';
 
         foreach($items as $key => $value_gf){
@@ -90,7 +82,7 @@ class JFormFieldSelectfilegroup extends JFormField {
 
         $html .= '</optgroup>
                 </select>';
-        $html .= '<input type="hidden" value="" id="selectfilegroup_hidden" name="'.$this->name.'"/>';
+        $html .= '<input type="hidden" value="" id="'.$name.'_hidden" name="'.$this->name.'"/>';
         return $html;
     }
 }

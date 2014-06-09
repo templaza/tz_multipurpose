@@ -1,0 +1,41 @@
+ul.flex-direction-nav .flex-next {
+    background-position: 100% 0;
+    right: -36px;
+    text-align: left;
+}
+.flex-direction-nav .flex-prev {
+    left: -36px;
+}
+ul.flex-direction-nav a {
+    background: url("../images/bg_direction_nav.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    cursor: pointer;
+    display: block;
+    height: 30px;
+    margin: -20px 0 0;
+    opacity: 0;
+    position: absolute;
+    text-indent: -9999px;
+    top: 50%;
+    width: 30px;
+    z-index: 10;
+}
+.flexslider .slides > li {
+    position: relative;
+}
+.tz_link.tz_flex a{
+    color: #fff;
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+.flex_desc {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.8);
+    position: absolute;
+    bottom: 0;
+    padding: 20px 20px 10px;
+    width: 100%;
+}
+
+.flex_desc .tz_flex {
+    color: #fff;
+    margin-bottom: 10px;
+}

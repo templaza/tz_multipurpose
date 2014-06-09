@@ -18,33 +18,7 @@
     position: absolute;
     right: 0;
 }
-.tz_mulri_pn .sb-navigation-left, .tz_mulri_pn .sb-navigation-right, .flex-direction-nav .flex-prev, .flex-direction-nav .flex-next {
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    text-indent: -99999em;
-}
-.tz_mulri_pn .sb-navigation-left, .flex-direction-nav .flex-prev{
-    background: url("../images/pn.png") no-repeat;
-}
-.tz_mulri_pn .sb-navigation-right, .flex-direction-nav .flex-next {
-    background: url("../images/pn.png") no-repeat scroll -30px 0 rgba(0, 0, 0, 0);
-}
-.tz_mulri_pn .sb-navigation-left:hover {
-    background: url("../images/hove_pn.png") no-repeat;
-}
-.tz_mulri_pn .sb-navigation-right:hover {
-    background: url("../images/hove_pn.png") no-repeat scroll -30px 0 rgba(0, 0, 0, 0);
-}
-#main .tz_mulri_pn .sb-navigation-left:hover {
-    background: url("../images/hove_pn.png") no-repeat;
-}
-#main .tz_mulri_pn .sb-navigation-right:hover {
-    background: url("../images/hove_pn.png") no-repeat scroll -30px 0 rgba(0, 0, 0, 0);
-}
-#slider .flex-direction-nav .flex-next, #carousel .flex-direction-nav .flex-next{
-    text-align: left;
-}
+
 .slides .tz_multi_item, .owl-carousel .tz_multi_item {
     padding: 0;
 }

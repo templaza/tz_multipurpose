@@ -1,21 +1,10 @@
 <?php
-/*------------------------------------------------------------------------
-
-# TZ Portfolio Extension
-
-# ------------------------------------------------------------------------
-
-# author    DuongTVTemPlaza
-
-# copyright Copyright (C) 2012 templaza.com. All Rights Reserved.
-
-# @license - http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
-
-# Websites: http://www.templaza.com
-
-# Technical Support:  Forum - http://templaza.com/Forum
-
--------------------------------------------------------------------------*/
+/**
+ * Created by PhpStorm.
+ * User: Thuong
+ * Date: 4/25/14
+ * Time: 3:54 PM
+ */
 
 defined('_JEXEC') or die;
 

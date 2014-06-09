@@ -1,21 +1,10 @@
 <?php
-/*------------------------------------------------------------------------
-
-# TZ Portfolio Extension
-
-# ------------------------------------------------------------------------
-
-# author    DuongTVTemPlaza
-
-# copyright Copyright (C) 2012 templaza.com. All Rights Reserved.
-
-# @license - http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
-
-# Websites: http://www.templaza.com
-
-# Technical Support:  Forum - http://templaza.com/Forum
-
--------------------------------------------------------------------------*/
+/**
+ * Created by PhpStorm.
+ * User: Thuong
+ * Date: 5/7/14
+ * Time: 10:49 AM
+ */
 
 defined('_JEXEC') or die();
 if(!defined('DS')) define('DS', DIRECTORY_SEPARATOR);
@@ -101,9 +90,9 @@ endif;
         foreach($list as $key => $arr) {?><div class="tz_multi_item"><?php
             $id_group       = $arr -> group;
             $list_field_id  = modTZMultipurposeHelper::getFieldGroup($id_group,'');
-            $i = 0;
             $j = 0;
             foreach($list_field_id as $f => $v_id_f){
+                $i = 0;
                 foreach($arr as $n => $value){
                     $a  = (int)$n;
                     if($n != 'group' && $a == $v_id_f){

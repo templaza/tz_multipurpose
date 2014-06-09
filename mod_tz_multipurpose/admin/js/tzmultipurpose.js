@@ -306,12 +306,63 @@ jQuery(function($){
             var $dataid   =   $(this).attr('data-id');
             $(this).attr('name',$(this).attr('name')+'['+$(this).attr('data-id')+']');
         });
-        var $value_sgf  = $('#jform_params_selectfilegroup').val();
-        $('#selectfilegroup_hidden').val($value_sgf);
+        // Carousel
         var $value_lf_cr  = $('#jform_paramslink_img_cr').val();
         $('#link_img_cr_hidden').val($value_lf_cr);
+        // Flex slider
         var $value_lf_flex  = $('#jform_paramslink_img_flex').val();
         $('#link_img_flex_hidden').val($value_lf_flex);
+        var $value_sgf_flex = $('#jform_params_flex_sgf').val();
+        $('#flex_sgf_hidden').val($value_sgf_flex);
+        // Isotope
+        var $value_slf_is  = $('#jform_params_select_filter_is').val(); // select field for filter isotope
+        $('#select_filter_is_hidden').val($value_slf_is);
+        // Progress Bars
+        var $value_s_pb  = $('#jform_params_selectpb').val(); // select field for filter isotope
+        $('#selectpb_hidden').val($value_s_pb);
+        // Pricing Table
+        var $value_prt_sgf  = $('#jform_params_prt_sgf_title').val(); // select field for title
+        $('#prt_sgf_title_hidden').val($value_prt_sgf);
+        var $value_sgf_pri  = $('#jform_params_prt_sgf_pri').val(); // select field for price
+        $('#prt_sgf_pri_hidden').val($value_sgf_pri);
+        var $value_prt_sgf_link  = $('#jform_params_prt_sgf_link').val(); // select field for link
+        $('#prt_sgf_link_hidden').val($value_prt_sgf_link);
+        // Our Team
+        var $value_us_sgf_social  = $('#jform_params_ut_social').val(); // select field for link
+        $('#ut_social_hidden').val($value_us_sgf_social);
+        var $value_us_sgf_name  = $('#jform_params_ut_name').val(); // select field for name
+        $('#ut_name_hidden').val($value_us_sgf_name);
+        var $value_us_sgf_desc  = $('#jform_params_ut_desc').val(); // select field for name
+        $('#ut_desc_hidden').val($value_us_sgf_desc);
+        // Our Team Carousel
+        var $value_us_sgf_scort  = $('#jform_params_ut_social_cort').val(); // select field for link
+        $('#ut_social_cort_hidden').val($value_us_sgf_scort);
+        var $value_us_sgf_ncort  = $('#jform_params_ut_name_cort').val(); // select field for name
+        $('#ut_name_cort_hidden').val($value_us_sgf_ncort);
+        var $value_us_sgf_dcort  = $('#jform_params_ut_desc_cort').val(); // select field for name
+        $('#ut_desc_cort_hidden').val($value_us_sgf_dcort);
+        // Service
+        var $value_lf_sv  = $('#jform_paramslink_img_sv').val(); // select link
+        $('#link_img_sv_hidden').val($value_lf_sv);
+        var $value_sv_sgf_font  = $('#jform_params_sv_fontas').val(); // select field for font
+        $('#sv_fontas_hidden').val($value_sv_sgf_font);
+        var $value_sv_sgf_logo  = $('#jform_params_sv_logo').val(); // select field for logo
+        $('#sv_logo_hidden').val($value_sv_sgf_logo);
+        var $value_sv_sgf_title  = $('#jform_params_sv_title').val(); // select field for title
+        $('#sv_title_hidden').val($value_sv_sgf_title);
+        var $value_sv_sgf_desc  = $('#jform_params_sv_desc').val(); // select field for desc
+        $('#sv_desc_hidden').val($value_sv_sgf_desc);
+        // Service carousel
+        var $value_lf_svcr  = $('#jform_paramslink_img_svcr').val(); // select link
+        $('#link_img_svcr_hidden').val($value_lf_svcr);
+        var $value_svcr_sgf_font  = $('#jform_params_sv_fontas_cr').val(); // select field for font
+        $('#sv_fontas_cr_hidden').val($value_svcr_sgf_font);
+        var $value_svcr_sgf_logo  = $('#jform_params_sv_logo_cr').val(); // select field for logo
+        $('#sv_logo_cr_hidden').val($value_svcr_sgf_logo);
+        var $value_crsv_sgf_title  = $('#jform_params_sv_title_cr').val(); // select field for title
+        $('#sv_title_cr_hidden').val($value_crsv_sgf_title);
+        var $value_svcr_sgf_desc  = $('#jform_params_sv_desc_cr').val(); // select field for desc
+        $('#sv_desc_cr_hidden').val($value_svcr_sgf_desc);
         $('#tz_multi_hidden').remove();
     };
 });

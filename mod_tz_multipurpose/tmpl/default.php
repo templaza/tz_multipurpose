@@ -1,21 +1,10 @@
 <?php
-/*------------------------------------------------------------------------
-
-# TZ Portfolio Extension
-
-# ------------------------------------------------------------------------
-
-# author    DuongTVTemPlaza
-
-# copyright Copyright (C) 2012 templaza.com. All Rights Reserved.
-
-# @license - http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
-
-# Websites: http://www.templaza.com
-
-# Technical Support:  Forum - http://templaza.com/Forum
-
--------------------------------------------------------------------------*/
+/**
+ * Created by PhpStorm.
+ * User: Thuong
+ * Date: 5/7/14
+ * Time: 10:49 AM
+ */
 
 defined('_JEXEC') or die();
 if(!defined('DS')) define('DS', DIRECTORY_SEPARATOR);
@@ -23,11 +12,29 @@ $document = JFactory::getDocument();
 require_once (JPATH_SITE.DS.'modules'.DS.'mod_tz_multipurpose'.DS.'helper.php');
 $document->addStyleSheet('modules/mod_tz_multipurpose/css/style.css');
 
+$responsive = $params->get('add_css_rps_df',0);
+if($responsive) {
+    $document->addStyleSheet('modules/mod_tz_multipurpose/css/tz_style.css');
+}
+$col    = $params -> get('column_df',4);
+$col_table  = $params -> get('column_df_table',4);
+$col_mobile = $params -> get('column_df_mobile',12);
+$m      = 1;
+$count_list     = count($list);
+$col_display    = floor(12/$col);
+$check_bt  = 0;
+if($m == $col_display) {
+    $check_bt  = 1;
+}
 ?>
 
-<div class="TzMultipurpose <?php echo $moduleclass_sfx; ?>">
+<div class="TzMultipurpose tz-container-fluid <?php echo $moduleclass_sfx; ?>">
     <?php
-    foreach($list as $key => $arr) {?><div class="tz_multi_item"><?php
+    foreach($list as $key => $arr) {
+        if($m%$col_display == 1 || $check_bt  == 1) {
+            echo '<div class="tz-row">';
+        }
+        echo '<div class="tz_multi_item tz-col-sm-'.$col_table.' tz-col-xs-'.$col_mobile.' tz-col-md-'.$col.'">';
         $id_group       = $arr -> group;
         $list_field_id  = modTZMultipurposeHelper::getFieldGroup($id_group,'');
         $i = 0;
@@ -69,7 +76,12 @@ $document->addStyleSheet('modules/mod_tz_multipurpose/css/style.css');
                 }
             }
         }
-        ?></div><?php
+        echo '</div>';
+        if($m%$col_display == 0 || $check_bt  == 1) {
+            echo '</div>';
+        }
+        $m++;
     }
+    if ($m%$col_display != 1 && $check_bt  == 0) echo "</div>";
     ?>
 </div>

@@ -16,6 +16,7 @@
         <filename>index.html</filename>
         <folder>admin</folder>
 		<folder>images</folder>
+		<folder>fonts</folder>
 		<folder>js</folder>
         <folder>css</folder>
         <folder>tmpl</folder>
@@ -34,6 +35,73 @@
                 </field>
                 <field type="tzmultipurpose" name="multipurpose" label="">
 
+                </field>
+            </fieldset>
+
+            <fieldset name="default_option" label="COM_MODULES_DEFAULT_OPTION_FIELDSET_LABEL">
+                <field name="add_css_rps_df" type="radio"
+                       class="btn-group" default="0"
+                       label="MOD_TZ_MULTIPURPOSE_USER_RESPONSIVE_LABEL"
+                       description="MOD_TZ_MULTIPURPOSE_USER_RESPONSIVE_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field
+                        name="column_df"
+                        type="list"
+                        default="4"
+                        label="MOD_TZ_MULTIPURPOSE_COLUMN_LABEL"
+                        description="MOD_TZ_MULTIPURPOSE_COLUMN_DESC">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </field>
+                <field
+                        name="column_df_table"
+                        type="list"
+                        default="4"
+                        label="MOD_TZ_MULTIPURPOSE_COLUMN_TABLE_LABEL"
+                        description="MOD_TZ_MULTIPURPOSE_COLUMN_TABLE_DESC">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </field>
+                <field
+                        name="column_df_mobile"
+                        type="list"
+                        default="12"
+                        label="MOD_TZ_MULTIPURPOSE_COLUMN_MOBILE_LABEL"
+                        description="MOD_TZ_MULTIPURPOSE_COLUMN_MOBILE_DESC">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
                 </field>
             </fieldset>
 
@@ -141,6 +209,633 @@
                 <field type="selectfilegroup" name="flex_sgf" label="MOD_TZ_MULTIPURPOSE_SELECT_FIELD_GROUP">
 
                 </field>
+            </fieldset>
+
+            <fieldset name="tz_multi_isotope" label="MOD_TZ_MULTIPURPOSE_ISOTOPE" addfieldpath="/modules/mod_tz_multipurpose/admin/formfields">
+                <field name="showLinkImg_iso" type="radio"
+                       class="btn-group" default="0"
+                       label="MOD_TZ_MULTIPURPOSE_SHOW_LINK_IMG_LABEL"
+                       description="MOD_TZ_MULTIPURPOSE_SHOW_LINK_IMG_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field type="selectfilegroup" name="select_filter_is" label="MOD_TZ_MULTIPURPOSE_SELECT_FILTER_ISOTOPE">
+
+                </field>
+                <field name="show_n_item" type="text"
+                       label="MOD_TZ_MULTIPURPOSE_ISOTOPE_SHOW_ITEM_LABL"
+                       description="MOD_TZ_MULTIPURPOSE_ISOTOPE">
+                </field>
+            </fieldset>
+
+            <fieldset name="tz_multi_ourteam" label="MOD_TZ_MULTIPURPOSE_SELECT_OUR_TEAM">
+                <field name="add_css_rps_ut" type="radio"
+                       class="btn-group" default="0"
+                       label="MOD_TZ_MULTIPURPOSE_USER_RESPONSIVE_LABEL"
+                       description="MOD_TZ_MULTIPURPOSE_USER_RESPONSIVE_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field
+                        name="column_ut"
+                        type="list"
+                        default="4"
+                        label="MOD_TZ_MULTIPURPOSE_COLUMN_LABEL"
+                        description="MOD_TZ_MULTIPURPOSE_COLUMN_DESC">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </field>
+                <field
+                        name="column_ut_table"
+                        type="list"
+                        default="4"
+                        label="MOD_TZ_MULTIPURPOSE_COLUMN_TABLE_LABEL"
+                        description="MOD_TZ_MULTIPURPOSE_COLUMN_TABLE_DESC">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </field>
+                <field
+                        name="column_ut_mobile"
+                        type="list"
+                        default="12"
+                        label="MOD_TZ_MULTIPURPOSE_COLUMN_MOBILE_LABEL"
+                        description="MOD_TZ_MULTIPURPOSE_COLUMN_MOBILE_DESC">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </field>
+
+                <field name="fontas_ot" type="radio"
+                       class="btn-group" default="0"
+                       label="MOD_TZ_MULTIPURPOSE_ADD_USER_FONT_AWESOME"
+                       description="MOD_TZ_MULTIPURPOSE_ADD_USER_FONT_AWESOME_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+
+                <field type="selectfilegroup" name="ut_social" label="MOD_TZ_MULTIPURPOSE_SELECT_FIELD_SOCIAL"></field>
+                <field type="selectfilegroup" name="ut_name" label="MOD_TZ_MULTIPURPOSE_SELECT_FIELD_NAME"></field>
+                <field type="selectfilegroup" name="ut_desc" label="MOD_TZ_MULTIPURPOSE_SELECT_FIELD_DESCRIPTION"></field>
+
+            </fieldset>
+
+            <fieldset name="tz_multi_ourteam_carousel" label="MOD_TZ_MULTIPURPOSE_OUR_TEAM_CAROUSEL" addfieldpath="/modules/mod_tz_multipurpose/admin/formfields">
+
+                <field name="fontas_cort" type="radio"
+                       class="btn-group" default="0"
+                       label="MOD_TZ_MULTIPURPOSE_ADD_USER_FONT_AWESOME"
+                       description="MOD_TZ_MULTIPURPOSE_ADD_USER_FONT_AWESOME_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field type="selectfilegroup" name="ut_social_cort" label="MOD_TZ_MULTIPURPOSE_SELECT_FIELD_SOCIAL"></field>
+                <field type="selectfilegroup" name="ut_name_cort" label="MOD_TZ_MULTIPURPOSE_SELECT_FIELD_NAME"></field>
+                <field type="selectfilegroup" name="ut_desc_cort" label="MOD_TZ_MULTIPURPOSE_SELECT_FIELD_DESCRIPTION"></field>
+                <field name="autoPlay_cort" type="radio"
+                       class="btn-group" default="0"
+                       label="MOD_TZ_MULTIPURPOSE_AUTO_LABEL"
+                       description="MOD_TZ_MULTIPURPOSE_AUTO_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="navigation_cort" type="radio"
+                       class="btn-group" default="0"
+                       label="MOD_TZ_MULTIPURPOSE_NAVIGATION_LABEL"
+                       description="MOD_TZ_MULTIPURPOSE_NAVIGATION_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="stopOnHover_cort" type="radio"
+                       class="btn-group" default="0"
+                       label="MOD_TZ_MULTIPURPOSE_STOP_ON_HOVER_LABEL"
+                       description="MOD_TZ_MULTIPURPOSE_STOP_ON_HOVER_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="singleItem_cort" type="radio"
+                       class="btn-group" default="0"
+                       label="MOD_TZ_MULTIPURPOSE_SINGLE_ITEM_LABEL"
+                       description="MOD_TZ_MULTIPURPOSE_SINGLE_ITEM_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="itemsScaleUp_cort" type="radio"
+                       class="btn-group" default="0"
+                       label="MOD_TZ_MULTIPURPOSE_ITEMS_SCALE_UP_LABEL"
+                       description="MOD_TZ_MULTIPURPOSE_ITEMS_SCALE_UP_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="rewindNav_cort" type="radio"
+                       class="btn-group" default="0"
+                       label="MOD_TZ_MULTIPURPOSE_REWIND_NAV_LABEL"
+                       description="MOD_TZ_MULTIPURPOSE_REWIND_NAV_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="pagination_cort" type="radio"
+                       class="btn-group" default="0"
+                       label="MOD_TZ_MULTIPURPOSE_PAGINATION_LABEL"
+                       description="MOD_TZ_MULTIPURPOSE_PAGINATION_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="paginationNumbers_cort" type="radio"
+                       class="btn-group" default="0"
+                       label="MOD_TZ_MULTIPURPOSE_PAGINATION_NUMBERS_LABEL"
+                       description="MOD_TZ_MULTIPURPOSE_PAGINATION_NUMBERS_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="items_cort" type="text"
+                       default="5"
+                       label="MOD_TZ_MULTIPURPOSE_ITEMS_LABEL"
+                       description="MOD_TZ_MULTIPURPOSE_ITEMS_DESC"/>
+                <field name="slideSpeed_cort" type="text"
+                       default="200"
+                       label="MOD_TZ_MULTIPURPOSE_SLIDE_SPEED_LABEL"
+                       description="MOD_TZ_MULTIPURPOSE_SLIDE_SPEED_DESC"/>
+                <field name="paginationSpeed_cort" type="text"
+                       default="800"
+                       label="MOD_TZ_MULTIPURPOSE_PAGINATION_SPEED_LABEL"
+                       description="MOD_TZ_MULTIPURPOSE_PAGINATION_SPEED_DESC"/>
+                <field name="rewindSpeed_cort" type="text"
+                       default="1000"
+                       label="MOD_TZ_MULTIPURPOSE_REWIND_SPEED_LABEL"
+                       description="MOD_TZ_SERVICES_REWIND_SPEED_DESC"/>
+
+            </fieldset>
+
+            <fieldset name="tz_progres_bars" label="MOD_TZ_MULTIPURPOSE_PROGRES_BARS" addfieldpath="/modules/mod_tz_multipurpose/admin/formfields">
+                <field name="add_css_rps_pb" type="radio"
+                       class="btn-group" default="0"
+                       label="MOD_TZ_MULTIPURPOSE_USER_RESPONSIVE_LABEL"
+                       description="MOD_TZ_MULTIPURPOSE_USER_RESPONSIVE_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field
+                        name="column_pb"
+                        type="list"
+                        default="4"
+                        label="MOD_TZ_MULTIPURPOSE_COLUMN_LABEL"
+                        description="MOD_TZ_MULTIPURPOSE_COLUMN_LABEL">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </field>
+                <field
+                        name="column_pb_table"
+                        type="list"
+                        default="4"
+                        label="MOD_TZ_MULTIPURPOSE_COLUMN_TABLE_LABEL"
+                        description="MOD_TZ_MULTIPURPOSE_COLUMN_TABLE_DESC">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </field>
+                <field
+                        name="column_pb_mobile"
+                        type="list"
+                        default="12"
+                        label="MOD_TZ_MULTIPURPOSE_COLUMN_MOBILE_LABEL"
+                        description="MOD_TZ_MULTIPURPOSE_COLUMN_MOBILE_DESC">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </field>
+                <field type="selectpb" name="select_field_pb" label="MOD_TZ_MULTIPURPOSE_SELECT_PROGRESS">
+
+                </field>
+                <field type="color" name="trackColor_ps"
+                       label="MOD_TZ_MULTIPURPOSE_TRACK_COLOR_LABEL"
+                       description="MOD_TZ_STATISTIC_TRACK_COLOR_DESC"/>
+                <field type="color" name="barColor_ps"
+                       label="MOD_TZ_MULTIPURPOSE_BAR_COLOR_LABEL"
+                       description="MOD_TZ_MULTIPURPOSE_BAR_COLOR_DESC"/>
+                <field type="color" name="scaleColor_ps"
+                       label="MOD_TZ_MULTIPURPOSE_SCALE_COLOR_LABEL"
+                       description="MOD_TZ_MULTIPURPOSE_SCALE_COLOR_DESC"/>
+                <field type="color" name="textColor_ps"
+                       label="MOD_TZ_MULTIPURPOSE_TEXT_COLOR_LABEL"/>
+
+                <field type="list" name="lineCap_ps"
+                       default="butt"
+                       label="MOD_TZ_MULTIPURPOSE_LINE_CAP_LABEL"
+                       description="MOD_TZ_MULTIPURPOSE_LINE_CAP_DESC">
+                    <option value="butt">MOD_TZ_MULTIPURPOSE_BUTT</option>
+                    <option value="round">MOD_TZ_MULTIPURPOSE_ROUND</option>
+                    <option value="square">MOD_TZ_MULTIPURPOSE_SQUARE</option>
+                </field>
+                <field type="list" name="easing_ps"
+                       label="MOD_TZ_MULTIPURPOSE_EASING_FUNCTION_LABEL"
+                       description="MOD_TZ_MULTIPURPOSE_EASING_FUNCTION_DESC">
+                    <option value="defaultEasing">MOD_TZ_MULTIPURPOSE_AUTO</option>
+                    <option value="jswing">jswing</option>
+                    <option value="def">def</option>
+                    <option value="easeInQuad">easeInQuad</option>
+                    <option value="easeOutQuad">easeOutQuad</option>
+                    <option value="easeInCubic">easeInCubic</option>
+                    <option value="easeOutCubic">easeOutCubic</option>
+                    <option value="easeInOutCubic">easeInOutCubic</option>
+                    <option value="easeInQuart">easeInQuart</option>
+                    <option value="easeOutQuart">easeOutQuart</option>
+                    <option value="easeInOutQuart">easeInOutQuart</option>
+                    <option value="easeInQuint">easeInQuint</option>
+                    <option value="easeOutQuint">easeOutQuint</option>
+                    <option value="easeInOutQuint">easeInOutQuint</option>
+                    <option value="easeInSine">easeInSine</option>
+                    <option value="easeOutSine">easeOutSine</option>
+                    <option value="easeInOutSine">easeInOutSine</option>
+                    <option value="easeInExpo">easeInExpo</option>
+                    <option value="easeOutExpo">easeOutExpo</option>
+                    <option value="easeInOutExpo">easeInOutExpo</option>
+                    <option value="easeInCirc">easeInCirc</option>
+                    <option value="easeOutCirc">easeOutCirc</option>
+                    <option value="easeInOutCirc">easeInOutCirc</option>
+                    <option value="easeInElastic">easeInElastic</option>
+                    <option value="easeOutElastic">easeOutElastic</option>
+                    <option value="easeInOutElastic">easeInOutElastic</option>
+                    <option value="easeInBack">easeInBack</option>
+                    <option value="easeOutBack">easeOutBack</option>
+                    <option value="easeInOutBack">easeInOutBack</option>
+                    <option value="easeInBounce">easeInBounce</option>
+                    <option value="easeOutBounce">easeOutBounce</option>
+                    <option value="easeInOutBounce">easeInOutBounce</option>
+                </field>
+                <field type="text" name="lineWidth_ps"
+                       default="3"
+                       label="MOD_TZ_MULTIPURPOSE_LINE_WIDTH_LABEL"
+                       description="MOD_TZ_MULTIPURPOSE_LINE_WIDTH_DESC"/>
+                <field type="text" name="size_ps"
+                       default="110"
+                       label="MOD_TZ_MULTIPURPOSE_SIZE_LABEL"
+                       description="MOD_TZ_MULTIPURPOSE_SIZE_DESC"/>
+                <field type="text" name="rotate_ps"
+                       default="0"
+                       label="MOD_TZ_MULTIPURPOSE_ROTATE_LABEL"
+                       description="MOD_TZ_MULTIPURPOSE_ROTATE_DESC"/>
+                <field type="radio" name="animate_ps"
+                       class="btn-group" default="1"
+                       label="MOD_TZ_MULTIPURPOSE_ANIMATION_LABEL"
+                       description="MOD_TZ_MULTIPURPOSE_ANIMATION_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field type="text" name="duration_ps"
+                       label="MOD_TZ_MULTIPURPOSE_DURATION_LABEL"
+                       description="MOD_TZ_MULTIPURPOSE_DURATION_DESC"/>
+            </fieldset>
+
+            <fieldset name="tz_pricingtable" label="COM_MODULES_TZ_PRICINGTABLE_FIELDSET_LABEL" addfieldpath="/modules/mod_tz_multipurpose/admin/formfields">
+                <field name="add_css_rps_prt" type="radio"
+                       class="btn-group" default="0"
+                       label="MOD_TZ_MULTIPURPOSE_USER_RESPONSIVE_LABEL"
+                       description="MOD_TZ_MULTIPURPOSE_USER_RESPONSIVE_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field
+                        name="column_prt"
+                        type="list"
+                        default="4"
+                        label="MOD_TZ_MULTIPURPOSE_COLUMN_LABEL"
+                        description="MOD_TZ_MULTIPURPOSE_COLUMN_LABEL">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </field>
+                <field
+                        name="column_prt_table"
+                        type="list"
+                        default="4"
+                        label="MOD_TZ_MULTIPURPOSE_COLUMN_TABLE_LABEL"
+                        description="MOD_TZ_MULTIPURPOSE_COLUMN_TABLE_DESC">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </field>
+                <field
+                        name="column_prt_mobile"
+                        type="list"
+                        default="12"
+                        label="MOD_TZ_MULTIPURPOSE_COLUMN_MOBILE_LABEL"
+                        description="MOD_TZ_MULTIPURPOSE_COLUMN_MOBILE_DESC">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </field>
+                <field type="selectfilegroup" name="prt_sgf_title" label="MOD_TZ_MULTIPURPOSE_SELECT_FIELD_GROUP_TITLE">
+
+                </field>
+                <field type="selectfilegroup" name="prt_sgf_pri" label="MOD_TZ_MULTIPURPOSE_SELECT_FIELD_GROUP_PRICE">
+
+                </field>
+                <field type="selectfilegroup" name="prt_sgf_link" label="MOD_TZ_MULTIPURPOSE_SELECT_FIELD_GROUP_LINK"></field>
+                <field type="color" name="prt_color_title"
+                       default="#FF6F00"
+                       label="MOD_TZ_MULTIPURPOSE_COLOR_TITLE_LABEL"
+                       description="MOD_TZ_MULTIPURPOSE_COLOR_TITLE_DESC"/>
+                <field type="color" name="prt_color_head"
+                       default="#34383B"
+                       label="MOD_TZ_MULTIPURPOSE_COLOR_HEAD_LABEL"
+                       description="MOD_TZ_MULTIPURPOSE_COLOR_HEAD_DESC"/>
+                <field type="color" name="prt_color_head_hv"
+                       default="#3E3E3E"
+                       label="MOD_TZ_MULTIPURPOSE_COLOR_HEAD_HOVER_LABEL"
+                       description="MOD_TZ_MULTIPURPOSE_COLOR_HEAD_HOVER_DESC"/>
+                <field type="color" name="prt_color_price"
+                       default="#BFCDD8"
+                       label="MOD_TZ_MULTIPURPOSE_COLOR_PRICE_LABEL"
+                       description="MOD_TZ_MULTIPURPOSE_COLOR_PRICE_DESC"/>
+                <field type="color" name="prt_color_button"
+                       default="#FF6F00"
+                       label="MOD_TZ_MULTIPURPOSE_COLOR_BUTTON_LABEL"
+                       description="MOD_TZ_MULTIPURPOSE_COLOR_BUTTON_DESC"/>
+                <field type="text" name="prt_size_border_button"
+                       default="2"
+                       label="MOD_TZ_MULTIPURPOSE_SIZE_BORDER_BUTTON_LABEL"
+                       description="MOD_TZ_MULTIPURPOSE_SIZE_BORDER_BUTTON_DESC"/>
+                <field type="color" name="prt_color_border_button"
+                       default="#FF6F00"
+                       label="MOD_TZ_MULTIPURPOSE_COLOR_BORDER_BUTTON_LABEL"
+                       description="MOD_TZ_MULTIPURPOSE_COLOR_BORDER_BUTTON_DESC"/>
+                <field type="color" name="prt_color_text_button"
+                       default="#FFFFFF"
+                       label="MOD_TZ_MULTIPURPOSE_COLOR_TEXT_BUTTON_LABEL"
+                       description="MOD_TZ_MULTIPURPOSE_COLOR_TEXT_BUTTON_DESC"/>
+                <field type="color" name="prt_color_item"
+                       default="#A0A0A0"
+                       label="MOD_TZ_MULTIPURPOSE_COLOR_ITEM_LABEL"
+                       description="MOD_TZ_MULTIPURPOSE_COLOR_ITEM_DESC"/>
+            </fieldset>
+
+            <fieldset name="service" label="COM_MODULES_SERVICE_FIELDSET_LABEL">
+                <field name="show_link_sv" type="radio"
+                       class="btn-group" default="0"
+                       label="MOD_TZ_MULTIPURPOSE_SHOW_LINK_LABEL"
+                       description="MOD_TZ_MULTIPURPOSE_SHOW_LINK_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field type="selectlink" name="link_img_sv" label="MOD_TZ_MULTIPURPOSE_SELECT_LINK_IMG">
+
+                </field>
+                <field name="add_css_rps_sv" type="radio"
+                       class="btn-group" default="0"
+                       label="MOD_TZ_MULTIPURPOSE_USER_RESPONSIVE_LABEL"
+                       description="MOD_TZ_MULTIPURPOSE_USER_RESPONSIVE_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field
+                        name="column_sv"
+                        type="list"
+                        default="4"
+                        label="MOD_TZ_MULTIPURPOSE_COLUMN_LABEL"
+                        description="MOD_TZ_MULTIPURPOSE_COLUMN_DESC">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </field>
+                <field
+                        name="column_sv_table"
+                        type="list"
+                        default="4"
+                        label="MOD_TZ_MULTIPURPOSE_COLUMN_TABLE_LABEL"
+                        description="MOD_TZ_MULTIPURPOSE_COLUMN_TABLE_DESC">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </field>
+                <field
+                        name="column_sv_mobile"
+                        type="list"
+                        default="12"
+                        label="MOD_TZ_MULTIPURPOSE_COLUMN_MOBILE_LABEL"
+                        description="MOD_TZ_MULTIPURPOSE_COLUMN_MOBILE_DESC">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </field>
+                <field name="fontas_sv" type="radio"
+                       class="btn-group" default="0"
+                       label="MOD_TZ_MULTIPURPOSE_ADD_USER_FONT_AWESOME"
+                       description="MOD_TZ_MULTIPURPOSE_ADD_USER_FONT_AWESOME_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field type="selectfilegroup" name="sv_fontas" label="MOD_TZ_MULTIPURPOSE_SELECT_FIELD_FONT_AWESOME"></field>
+                <field type="selectfilegroup" name="sv_logo" label="MOD_TZ_MULTIPURPOSE_SELECT_FIELD_LOGO"></field>
+                <field type="selectfilegroup" name="sv_title" label="MOD_TZ_MULTIPURPOSE_SELECT_FIELD_NAME"></field>
+                <field type="selectfilegroup" name="sv_desc" label="MOD_TZ_MULTIPURPOSE_SELECT_FIELD_DESCRIPTION"></field>
+            </fieldset>
+
+            <fieldset name="service_craousel" label="COM_MODULES_SERVICE_CAROUSEL_FIELDSET_LABEL">
+                <field name="show_link_svcr" type="radio"
+                       class="btn-group" default="0"
+                       label="MOD_TZ_MULTIPURPOSE_SHOW_LINK_LABEL"
+                       description="MOD_TZ_MULTIPURPOSE_SHOW_LINK_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field type="selectlink" name="link_img_svcr" label="MOD_TZ_MULTIPURPOSE_SELECT_LINK_IMG">
+
+                </field>
+
+                <field name="fontas_svcr" type="radio"
+                       class="btn-group" default="0"
+                       label="MOD_TZ_MULTIPURPOSE_ADD_USER_FONT_AWESOME"
+                       description="MOD_TZ_MULTIPURPOSE_ADD_USER_FONT_AWESOME_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field type="selectfilegroup" name="sv_fontas_cr" label="MOD_TZ_MULTIPURPOSE_SELECT_FIELD_FONT_AWESOME"></field>
+                <field type="selectfilegroup" name="sv_logo_cr" label="MOD_TZ_MULTIPURPOSE_SELECT_FIELD_LOGO"></field>
+                <field type="selectfilegroup" name="sv_title_cr" label="MOD_TZ_MULTIPURPOSE_SELECT_FIELD_NAME"></field>
+                <field type="selectfilegroup" name="sv_desc_cr" label="MOD_TZ_MULTIPURPOSE_SELECT_FIELD_DESCRIPTION"></field>
+                <field name="autoPlay_sv" type="radio"
+                       class="btn-group" default="0"
+                       label="MOD_TZ_MULTIPURPOSE_AUTO_LABEL"
+                       description="MOD_TZ_MULTIPURPOSE_AUTO_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="navigation_sv" type="radio"
+                       class="btn-group" default="0"
+                       label="MOD_TZ_MULTIPURPOSE_NAVIGATION_LABEL"
+                       description="MOD_TZ_MULTIPURPOSE_NAVIGATION_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="stopOnHover_sv" type="radio"
+                       class="btn-group" default="0"
+                       label="MOD_TZ_MULTIPURPOSE_STOP_ON_HOVER_LABEL"
+                       description="MOD_TZ_MULTIPURPOSE_STOP_ON_HOVER_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="singleItem_sv" type="radio"
+                       class="btn-group" default="0"
+                       label="MOD_TZ_MULTIPURPOSE_SINGLE_ITEM_LABEL"
+                       description="MOD_TZ_MULTIPURPOSE_SINGLE_ITEM_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="itemsScaleUp_sv" type="radio"
+                       class="btn-group" default="0"
+                       label="MOD_TZ_MULTIPURPOSE_ITEMS_SCALE_UP_LABEL"
+                       description="MOD_TZ_MULTIPURPOSE_ITEMS_SCALE_UP_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="rewindNav_sv" type="radio"
+                       class="btn-group" default="0"
+                       label="MOD_TZ_MULTIPURPOSE_REWIND_NAV_LABEL"
+                       description="MOD_TZ_MULTIPURPOSE_REWIND_NAV_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="pagination_sv" type="radio"
+                       class="btn-group" default="0"
+                       label="MOD_TZ_MULTIPURPOSE_PAGINATION_LABEL"
+                       description="MOD_TZ_MULTIPURPOSE_PAGINATION_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="paginationNumbers_sv" type="radio"
+                       class="btn-group" default="0"
+                       label="MOD_TZ_MULTIPURPOSE_PAGINATION_NUMBERS_LABEL"
+                       description="MOD_TZ_MULTIPURPOSE_PAGINATION_NUMBERS_DESC">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="items_sv" type="text"
+                       default="5"
+                       label="MOD_TZ_MULTIPURPOSE_ITEMS_LABEL"
+                       description="MOD_TZ_MULTIPURPOSE_ITEMS_DESC"/>
+                <field name="slideSpeed_sv" type="text"
+                       default="200"
+                       label="MOD_TZ_MULTIPURPOSE_SLIDE_SPEED_LABEL"
+                       description="MOD_TZ_MULTIPURPOSE_SLIDE_SPEED_DESC"/>
+                <field name="paginationSpeed_sv" type="text"
+                       default="800"
+                       label="MOD_TZ_MULTIPURPOSE_PAGINATION_SPEED_LABEL"
+                       description="MOD_TZ_MULTIPURPOSE_PAGINATION_SPEED_DESC"/>
+                <field name="rewindSpeed_sv" type="text"
+                       default="1000"
+                       label="MOD_TZ_MULTIPURPOSE_REWIND_SPEED_LABEL"
+                       description="MOD_TZ_SERVICES_REWIND_SPEED_DESC"/>
             </fieldset>
 
             <fieldset

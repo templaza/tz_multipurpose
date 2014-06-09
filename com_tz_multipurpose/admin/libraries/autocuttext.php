@@ -17,8 +17,6 @@
 
 -------------------------------------------------------------------------*/
 
-defined('JPATH_BASE') or die;
-
 class AutoCutText{
 	/**
 	 * String data input

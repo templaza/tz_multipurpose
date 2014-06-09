@@ -1,0 +1,51 @@
+.ourteam {
+    border: 1px solid #E5E9EC;
+    margin-bottom: 15px;
+}
+.ourteam_desc {
+    /*border: 1px solid #E5E9EC;*/
+    /*border-top: none;*/
+}
+.ourteam_desc .tz_multi {
+    padding: 0 15px;
+    margin-bottom: 0px;
+}
+.ourteam_desc .tz_multi_name {
+    font-weight: bold;
+    padding-top: 13px;
+    text-transform: uppercase;
+}
+.ourteam_desc .tz_multi_desc {
+    padding-bottom: 10px;
+    color: #a2a7aa;
+}
+.link_social {
+    border-top: 1px solid #E5E9EC;
+    padding: 13px 15px;
+}
+.link_social > a {
+    padding-right: 8px;
+}
+.ourteam:hover .tz_multi_image img {
+    opacity: 0;
+}
+.ourteam:hover .tz_multi_image {
+    background-color: #FF7200;
+    background-image: url("../images/plus.png");
+    background-position: 50% center;
+    background-repeat: no-repeat;
+}
+.ourteam:hover .tz_multi_name {
+    color: #FF7200;
+}
+.ourteam:hover .ourteam_desc .tz_multi {
+    background: #333;
+}
+.link_social i {
+    font-size: 17px;
+    color: #cdcdcd;
+    padding-right: 5px;
+}
+.link_social a:hover i {
+    color: #9095a9;
+}
