@@ -137,7 +137,6 @@ $document -> addScriptDeclaration('
         var rtop    = jQuery("#TzMultipurpose'.$module -> id.' .chart").offset().top,
             wheight = jQuery(this).height(),
             wtop    = jQuery(this).scrollTop() + wheight/3;
-
         if((jQuery(this).scrollTop() >= (rtop - wheight/1.2)) && (jQuery(this).scrollTop() <= ((rtop + wheight/3)*2))){
             jQuery("#TzMultipurpose'.$module -> id.' .chart").easyPieChart({
                 easing: "'.$params -> get('easing_ps','defaultEasing').'",
@@ -161,7 +160,7 @@ $document -> addScriptDeclaration('
 		}
     }
 
-    jQuery(window).load(function(){
+    jQuery(window).scroll(function(){
         chartfunc'.$module -> id.'();
     });
 ');

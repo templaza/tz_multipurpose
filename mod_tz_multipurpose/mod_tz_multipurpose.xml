@@ -9,17 +9,17 @@
 	<copyright>Copyright (C) 2012 TemPlaza. All rights reserved.</copyright>
 	<license>GNU/GPL v2 or later http://www.gnu.org/licenses/gpl-2.0.html</license>
 	<description>Module TZ Multipurpose</description>
-	<version>1.1</version>
+	<version>1.2</version>
     <files>
         <filename module="mod_tz_multipurpose">mod_tz_multipurpose.php</filename>
-		<folder>admin</folder>
+        <filename>helper.php</filename>
+        <filename>index.html</filename>
+        <folder>admin</folder>
 		<folder>images</folder>
 		<folder>fonts</folder>
 		<folder>js</folder>
         <folder>css</folder>
         <folder>tmpl</folder>
-        <filename>helper.php</filename>
-        <filename>index.html</filename>
     </files>
     <languages folder="languages">
         <language tag="en-GB">en-GB/en-GB.mod_tz_multipurpose.ini</language>
@@ -209,7 +209,7 @@
                 <field type="selectfilegroup" name="flex_sgf" label="MOD_TZ_MULTIPURPOSE_SELECT_FIELD_GROUP">
 
                 </field>
-            </fieldset>
+            </fieldset>           
 
             <fieldset name="tz_multi_ourteam" label="MOD_TZ_MULTIPURPOSE_SELECT_OUR_TEAM">
                 <field name="add_css_rps_ut" type="radio"
@@ -378,7 +378,7 @@
 
             </fieldset>
 
-            <fieldset name="tz_progres_bars" label="MOD_TZ_MULTIPURPOSE_PROGRES_BARS" addfieldpath="/modules/mod_tz_multipurpose/admin/formfields">
+            <fieldset name="tz_progress_bars" label="MOD_TZ_MULTIPURPOSE_PROGRESS_BARS" addfieldpath="/modules/mod_tz_multipurpose/admin/formfields">
                 <field name="add_css_rps_pb" type="radio"
                        class="btn-group" default="0"
                        label="MOD_TZ_MULTIPURPOSE_USER_RESPONSIVE_LABEL"

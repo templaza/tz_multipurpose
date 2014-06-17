@@ -7,7 +7,12 @@
  */
 
 defined('JPATH_BASE') or die;
+include_once (JPATH_BASE) . '/components/com_tz_multipurpose/libraries/core/defines.php';
+include_once (JPATH_BASE) . '/components/com_tz_multipurpose/libraries/core/tzmultipurpose.php';
 
+if (!version_compare(JVERSION,'3.0','ge')) {
+    JHtml::addIncludePath(JPATH_ADMINISTRATOR.'/components/com_tz_multipurpose/libraries/cms/html');
+}
 jimport('joomla.form.formfield');
 jimport('joomla.html.editor');
 
