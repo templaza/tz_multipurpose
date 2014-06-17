@@ -37,8 +37,8 @@ if($m == $col_display) {
         echo '<div class="tz_multi_item tz-col-sm-'.$col_table.' tz-col-xs-'.$col_mobile.' tz-col-md-'.$col.'">';
         $id_group       = $arr -> group;
         $list_field_id  = modTZMultipurposeHelper::getFieldGroup($id_group,'');
-        $i = 0;
         foreach($list_field_id as $f => $v_id_f){
+			$i = 0;
             foreach($arr as $n => $value){
                 $a  = (int)$n;
                 if($n != 'group' && $a == $v_id_f){

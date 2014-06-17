@@ -13,6 +13,10 @@ Demo: http://demo.tzportfolio.com/
 
 *** Changelog ***
 
+6/17/1014  - 1.2
+	
+	Fix error jhtml formbehavior in joomla 2.5
+
 06/09/2014 - 1.1
 
 	Add new layout our team
