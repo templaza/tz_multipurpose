@@ -11,7 +11,7 @@
     <packagerurl>http://www.templaza.com</packagerurl>
 	<copyright>Copyright (C) 2012 TemPlaza. All rights reserved.</copyright>
 	<license>GNU/GPL v2 or later http://www.gnu.org/licenses/gpl-2.0.html</license>
-	<version>1.2</version>
+	<version>1.3</version>
     <files>
         <file type="component" id="com_tz_multipurpose">com_tz_multipurpose</file>
 		<file type="module" id="mod_tz_multipurpose" client="site">mod_tz_multipurpose</file>

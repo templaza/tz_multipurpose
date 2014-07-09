@@ -67,6 +67,7 @@ if($m == $col_display) {
                             $type_field = $field -> type;
                             $id_field   = $field -> id;
                             // type Image
+
                             if($type_field == 'image' && $font_as == 0){
                                 echo '<div class="tz_image '.$field->title.'">';
                                 if($show_link == 1 && $link_img != '') {
@@ -90,7 +91,6 @@ if($m == $col_display) {
                             }
 
                             // type textarea, textfield
-
                             if($type_field == 'textarea' || $type_field == 'textfield'){
                                 if($font_as == 1 && in_array($id_field,$field_font_arr)) {
                                     if($show_link == 1 && $link_img != '') {

@@ -18,6 +18,15 @@ if (version_compare(JVERSION, '3.0', '<=')) :
     $document->addScript('modules/mod_tz_multipurpose/js/jquery-1.9.1.min.js');
 endif;
 
+$background = $params->get('tz_cr_background','');
+$baseurl = JUri::base();
+if($background != ''){
+    $url_back = $baseurl . $background;
+    $class_back = 'owl_background';
+}else {
+    $url_back = '';
+    $class_back = '';
+}
 $showlinkimg = $params->get('showLinkImg_cr', 0);
 $link_img    = $params->get('link_img_cr', '');
 
@@ -85,7 +94,7 @@ endif;
 
 ?>
 <div class="TzMultipurpose">
-    <div id="TzMultipurpose<?php echo $module -> id;?>" class="owl-carousel owl-theme<?php echo $moduleclass_sfx; ?>">
+    <div id="TzMultipurpose<?php echo $module -> id;?>" class="owl-carousel owl-theme<?php echo $moduleclass_sfx.' '.$class_back; ?>">
         <?php
         foreach($list as $key => $arr) {?><div class="tz_multi_item"><?php
             $id_group       = $arr -> group;
@@ -154,7 +163,13 @@ endif;
         </div>
     <?php endif; ?>
 </div>
-
+<?php
+$document -> addStyleDeclaration('
+    #TzMultipurpose'.$module -> id.'{
+        background-image: url("'.$url_back.'");
+    }
+');
+?>
 <script type="text/javascript">
     jQuery(document).ready(function () {
         var owl = jQuery("#TzMultipurpose<?php echo $module -> id;?>");
