@@ -13,6 +13,11 @@ Demo: http://demo.tzportfolio.com/
 
 *** Changelog ***
 
+7/09/2014  - 1.3
+
+	Add New Layout Tab
+	Add new option background for layout Carousel and Progress Bars
+
 6/17/1014  - 1.2
 	
 	Fix error jhtml formbehavior in joomla 2.5

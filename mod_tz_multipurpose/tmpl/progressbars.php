@@ -13,6 +13,16 @@ require_once (JPATH_SITE.DS.'modules'.DS.'mod_tz_multipurpose'.DS.'helper.php');
 $document->addStyleSheet('modules/mod_tz_multipurpose/css/progresbars.css');
 $document -> addScript('modules/mod_tz_multipurpose/js/jquery.easypiechart.min.js');
 
+$background = $params->get('tz_progress_background','');
+$baseurl = JUri::base();
+if($background != ''){
+    $url_back = $baseurl . $background;
+    $class_back = 'prb_background';
+}else {
+    $url_back = '';
+    $class_back = '';
+}
+
 $responsive = $params->get('add_css_rps_pb',0);
 if($responsive) {
     $document->addStyleSheet('modules/mod_tz_multipurpose/css/tz_style.css');
@@ -43,7 +53,7 @@ if($m == $col_display) {
 }
 ?>
 
-<div class="TzMultipurpose container-fluid <?php echo $moduleclass_sfx; ?>" id="TzMultipurpose<?php echo $module -> id;?>">
+<div class="TzMultipurpose container-fluid <?php echo $moduleclass_sfx.' '.$class_back; ?>" id="TzMultipurpose<?php echo $module -> id;?>">
     <?php
     foreach($list as $key => $arr) {
         if($m%$col_display == 1 || $check_bt  == 1) {
@@ -130,6 +140,9 @@ $document -> addStyleDeclaration('
         width: '.$params -> get('size',110).'px;
         height: '.$params -> get('size',110).'px;
     }
+    #TzMultipurpose'.$module -> id.'{
+            background-image: url("'.$url_back.'");
+    }
 ');
 
 $document -> addScriptDeclaration('
@@ -159,8 +172,7 @@ $document -> addScriptDeclaration('
             });
 		}
     }
-
-    jQuery(window).scroll(function(){
+    jQuery(window).load(function(){
         chartfunc'.$module -> id.'();
     });
 ');

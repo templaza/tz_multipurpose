@@ -363,6 +363,11 @@ jQuery(function($){
         $('#sv_title_cr_hidden').val($value_crsv_sgf_title);
         var $value_svcr_sgf_desc  = $('#jform_params_sv_desc_cr').val(); // select field for desc
         $('#sv_desc_cr_hidden').val($value_svcr_sgf_desc);
+        // Layout Tab
+        var $value_tab1_head  = $('#jform_params_tab_head').val(); // select field for desc
+        $('#tab_head_hidden').val($value_tab1_head);
+        var $value_tab1_desc  = $('#jform_params_tab_desc').val(); // select field for desc
+        $('#tab_desc_hidden').val($value_tab1_desc);
         $('#tz_multi_hidden').remove();
     };
 });

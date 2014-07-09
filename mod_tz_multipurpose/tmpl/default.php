@@ -38,7 +38,7 @@ if($m == $col_display) {
         $id_group       = $arr -> group;
         $list_field_id  = modTZMultipurposeHelper::getFieldGroup($id_group,'');
         foreach($list_field_id as $f => $v_id_f){
-			$i = 0;
+            $i = 0;
             foreach($arr as $n => $value){
                 $a  = (int)$n;
                 if($n != 'group' && $a == $v_id_f){

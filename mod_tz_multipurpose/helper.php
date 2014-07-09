@@ -99,9 +99,9 @@ class modTZMultipurposeHelper{
         $title_link = $arr -> $get_a_t;
         $link       = $arr -> $get_a_l;
         $link_open  = $arr -> $get_a_o;
-        $link_o = 'target="_self"';
+        $link_o = 'target="_blank"';
         if($link_open == 'Same Window') {
-            $link_o = 'target="_blank"';
+            $link_o = 'target="_self"';
         }
         $field_a = self::getField($a);
         $value      = $field_a -> value;

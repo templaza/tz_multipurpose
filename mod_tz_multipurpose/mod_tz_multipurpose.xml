@@ -9,7 +9,7 @@
 	<copyright>Copyright (C) 2012 TemPlaza. All rights reserved.</copyright>
 	<license>GNU/GPL v2 or later http://www.gnu.org/licenses/gpl-2.0.html</license>
 	<description>Module TZ Multipurpose</description>
-	<version>1.2</version>
+	<version>1.3</version>
     <files>
         <filename module="mod_tz_multipurpose">mod_tz_multipurpose.php</filename>
         <filename>helper.php</filename>
@@ -106,7 +106,7 @@
             </fieldset>
 
             <fieldset name="tz_multi_carousel" label="MOD_TZ_MULTIPURPOSE_CAROUSEL" addfieldpath="/modules/mod_tz_multipurpose/admin/formfields">
-
+                <field name="tz_cr_background" label="MOD_TZ_PROGRESS_BACKGROUND" type="media"/>
                 <field name="showLinkImg_cr" type="radio"
                        class="btn-group" default="0"
                        label="MOD_TZ_MULTIPURPOSE_SHOW_LINK_IMG_LABEL"
@@ -209,7 +209,7 @@
                 <field type="selectfilegroup" name="flex_sgf" label="MOD_TZ_MULTIPURPOSE_SELECT_FIELD_GROUP">
 
                 </field>
-            </fieldset>           
+            </fieldset>
 
             <fieldset name="tz_multi_ourteam" label="MOD_TZ_MULTIPURPOSE_SELECT_OUR_TEAM">
                 <field name="add_css_rps_ut" type="radio"
@@ -276,7 +276,6 @@
                     <option value="11">11</option>
                     <option value="12">12</option>
                 </field>
-
                 <field name="fontas_ot" type="radio"
                        class="btn-group" default="0"
                        label="MOD_TZ_MULTIPURPOSE_ADD_USER_FONT_AWESOME"
@@ -379,6 +378,7 @@
             </fieldset>
 
             <fieldset name="tz_progress_bars" label="MOD_TZ_MULTIPURPOSE_PROGRESS_BARS" addfieldpath="/modules/mod_tz_multipurpose/admin/formfields">
+                <field name="tz_progress_background" label="MOD_TZ_PROGRESS_BACKGROUND" type="media"/>
                 <field name="add_css_rps_pb" type="radio"
                        class="btn-group" default="0"
                        label="MOD_TZ_MULTIPURPOSE_USER_RESPONSIVE_LABEL"
@@ -636,7 +636,7 @@
                        description="MOD_TZ_MULTIPURPOSE_COLOR_ITEM_DESC"/>
             </fieldset>
 
-            <fieldset name="service" label="COM_MODULES_SERVICE_FIELDSET_LABEL">
+            <fieldset name="service" label="COM_MODULES_SERVICE_FIELDSET_LABEL" addfieldpath="/modules/mod_tz_multipurpose/admin/formfields">
                 <field name="show_link_sv" type="radio"
                        class="btn-group" default="0"
                        label="MOD_TZ_MULTIPURPOSE_SHOW_LINK_LABEL"
@@ -733,9 +733,7 @@
                     <option value="1">JYES</option>
                 </field>
                 <field type="selectlink" name="link_img_svcr" label="MOD_TZ_MULTIPURPOSE_SELECT_LINK_IMG">
-
                 </field>
-
                 <field name="fontas_svcr" type="radio"
                        class="btn-group" default="0"
                        label="MOD_TZ_MULTIPURPOSE_ADD_USER_FONT_AWESOME"
@@ -819,6 +817,38 @@
                        default="1000"
                        label="MOD_TZ_MULTIPURPOSE_REWIND_SPEED_LABEL"
                        description="MOD_TZ_SERVICES_REWIND_SPEED_DESC"/>
+            </fieldset>
+
+            <fieldset name="tz_multi_tab" label="COM_MODULES_TAB_FIELDSET_LABEL" addfieldpath="/modules/mod_tz_multipurpose/admin/formfields">
+                <field name="tm_tab_width" type="text"
+                       label="MOD_TZ_MULTIPURPOSE_TAB_WIDTH"
+                       description="MOD_TZ_MULTIPURPOSE_TAB_WIDTH_DESC"
+                       default="450">
+                </field>
+                <field name="tm_tab_height" type="text"
+                       label="MOD_TZ_MULTIPURPOSE_TAB_HEIGHT"
+                       description="MOD_TZ_MULTIPURPOSE_TAB_HEIGHT_DESC"
+                       default="300">
+                </field>
+                <field name="tab_animated" type="list" label="MOD_TZ_MULTIPURPOSE_REWIND_SPEED_LABEL"
+                       default="1">
+                    <option value="fade">Fade</option>
+                    <option value="curtain">Curtain</option>
+                    <option value="slide">Slide</option>
+                    <option value="false">False</option>
+                </field>
+                <field name="tm_tab_spend_animated" type="text"
+                       label="MOD_TZ_MULTIPURPOSE_TAB_ANIMATED_LABEL"
+                       description="MOD_TZ_MULTIPURPOSE_TAB_ANIMATED_DESC"
+                       default="500">
+                </field>
+                <field name="tm_tab_delay" type="text"
+                       label="MOD_TZ_MULTIPURPOSE_TAB_ANIMATED_DELAY_LABEL"
+                       description="MOD_TZ_MULTIPURPOSE_TAB_ANIMATED_DELAY_DESC"
+                       default="2500">
+                </field>
+                <field type="selectfilegroup" name="tab_head" label="MOD_TZ_MULTIPURPOSE_SELECT_FIELD_HEAD"></field>
+                <field type="selectfilegroup" name="tab_desc" label="MOD_TZ_MULTIPURPOSE_SELECT_FIELD_DESCRIPTION"></field>
             </fieldset>
 
             <fieldset
