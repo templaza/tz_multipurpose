@@ -16,4 +16,8 @@
         <file type="component" id="com_tz_multipurpose">com_tz_multipurpose</file>
 		<file type="module" id="mod_tz_multipurpose" client="site">mod_tz_multipurpose</file>
 	</files>
+	
+    <updateservers>
+        <server type="extension" priority="1" name="TZ MultiPurpose Core"><![CDATA[http://joomla.templaza.net/extensions/updates/components/tz_multipurpose_update.xml]]></server>
+    </updateservers>
 </extension>
